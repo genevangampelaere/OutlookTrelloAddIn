@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="https://api.trello.com/1/client.js?key=7b160aae0a5eadf3d9d26432fd6cd1df"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!--  <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!--  <script src="../../Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+    <script src="Home.js"></script>
+    <script src="../TrelloHelper.js"></script>
+
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+    <div id="content-main">
+        <div class="padding">
+            <!--<p><strong>Connect </strong></p>
+            <p>For example:</p>
+            <button id="set-subject">Set subject</button><button id="get-subject">Get subject</button>
+            <button id="add-to-recipients">Add yourself to recipients list</button>-->
+
+            <div id="trelloConnect">
+                <p>
+                    <button id="btnConnectTrello">Connect your Trello account</button>
+                </p>
+            </div>
+
+            <div id="trelloInfoPanel">
+
+                <div class="dropdown">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="trelloBoards" class="col-sm-2 control-label">Board</label>
+                            <div class="col-sm-10">
+                                <select id="trelloBoards" class="form-control">
+                                    <option value='false'>Select a Board</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="trelloLists" class="col-sm-2 control-label">List</label>
+                            <div class="col-sm-10">
+                                <select id="trelloLists" class="form-control">
+                                    <option value='false'>Select a list</option>
+
+
+                                </select>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div id="trelloCards">
+
+                </div>
+
+            </div>
+
+            <p style="margin-top: 50px;">
+                Created by <a target="_blank" href="http://www.SPums.be">www.SPums.be</a>.
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+  <Id>7fabfcfb-6308-46f9-9128-7a8462b248cd</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>www.SPums.be</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Outlook Trello" />
+  <Description DefaultValue="The unofficial Trello Outlook add-in. &#xD;&#xA;Insert a copy of a trello card into your e-mail message."/>
+  <IconUrl DefaultValue="~remoteAppUrl/Images/trello-icon64x64.png" />
+  <HighResolutionIconUrl DefaultValue="~remoteAppUrl/Images/trello-icon128x128.png" />
+  <SupportUrl DefaultValue="http://www.SPums.be" />
+  <Hosts>
+    <Host Name="Mailbox" />
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="MailBox" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="~remoteAppUrl/AppCompose/Home/Home.html"/>
+      </DesktopSettings>
+      <TabletSettings>
+        <SourceLocation DefaultValue="~remoteAppUrl/AppCompose/Home/Home.html" />
+      </TabletSettings>
+      <PhoneSettings>
+        <SourceLocation DefaultValue="~remoteAppUrl/AppCompose/Home/Home.html" />
+      </PhoneSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit" />
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Edit" />
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+</OfficeApp>
