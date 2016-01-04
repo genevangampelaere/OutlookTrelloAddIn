@@ -1,3 +1,3 @@
 # OutlookTrelloAddIn
 
-more later...
+Integrates Trello in Outlook as an Outlook add-in.
